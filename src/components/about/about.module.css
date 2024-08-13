@@ -1,0 +1,17 @@
+.aboutSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 6em;
+    background-image: url('../../assets//images/habout-bg.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .aboutSection {
+        flex-direction: column;
+        padding: 4rem 2rem;
+    }
+    
+  }

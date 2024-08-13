@@ -1,0 +1,79 @@
+.AppointmentCard {
+  width: 100%;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .AppointmentCard {
+    margin: 3.5rem auto 0rem auto;
+  }
+  
+}
+.infoTitle {
+    font-size: 2rem !important;
+    margin-bottom: 0.75rem;
+  }
+  .infoTitleAlt {
+    color: #0f9bba;
+  }
+  .phone {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(61, 222, 191,0.7);
+  }
+  .infoDescription {
+    font-size: 1.05rem !important;
+  }
+  .infoBox {
+    padding: 0;
+    border-radius: 2rem;
+    background-color: var(--primary-color);
+    box-shadow: 0rem 0rem 0.6rem rgba(0, 0, 0, 0.05);
+  }
+
+  .infoBlockTop {
+    background: linear-gradient(to bottom right, #0f9bba, #3ddebf);
+    border-radius: 2rem 2rem 0 0;
+    padding: 2rem;
+    color: var(--primary-color);
+  }
+
+  .infoBlockBottom {
+    padding: 2rem;
+  }
+
+  .hoursList {
+    font-size: 1.1rem;
+    color: #506e76;
+    font-weight: 500;
+    list-style: none;
+    padding: 0;
+  }
+
+  .hoursList li {
+    padding: 1rem 0 2rem 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .borderBottom {
+    border-bottom: 1px solid rgba(121, 150, 144, 0.3);
+  }
+
+  @media screen and (max-width: 1024px) {
+    .infoBlockTop,   .infoBlockBottom {
+      padding: 1rem;
+    }
+
+    .infoTitle {
+      font-size: 1.5rem !important;
+    }
+
+    .hoursList {
+      font-size: 0.935rem;
+    }
+    
+  }
+  
+
+  

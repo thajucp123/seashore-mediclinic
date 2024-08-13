@@ -1,0 +1,93 @@
+.doctors {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.ourDoctor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    }
+
+    .mainTitle {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        color: var(--tertiary-color);
+    }
+    
+    .separator {
+        width: 5rem;
+        height: 0.25rem;
+        background-color: rgba(28, 162, 192,0.2);
+        margin: 1rem auto;
+      }
+    
+    .doctorCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 56.25rem;
+    background-color: #fff;
+    border-radius: 0.625rem;
+    padding: 2rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    }
+    
+    .doctorImage {
+    width: 12rem;
+    height: auto;
+    border-radius: 2rem;
+    border: 1px solid #4b4a4a;
+    object-fit: contain;
+    }
+    
+    .doctorInfo {
+    padding: 1.5rem;
+    text-align: left;
+    }
+    
+    .doctorName {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0.625rem 0;
+    }
+    
+    .doctorSpecialty {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 1.25rem;
+    }
+    
+    .doctorDescription {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .ourDoctor {
+            padding: 1.5rem 0;
+        }
+        .doctorCard {
+            flex-direction: column;
+            padding: 2rem 0.5rem;
+        }
+        .doctorInfo {
+            text-align: center;
+            padding: 0 0 1.2rem 0;
+        }
+        .doctorImage {
+            width: 10rem;
+            margin-bottom: 1rem;
+        }
+        .doctorName {
+            font-size: 1.3rem;
+        }
+    }

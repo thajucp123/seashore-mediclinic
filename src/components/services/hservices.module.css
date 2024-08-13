@@ -1,0 +1,77 @@
+.servicesSection {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-image: linear-gradient(to top right, rgba(15, 155, 186, 0.9), rgba(61, 222, 191, 0.9) 80%), url('../../assets/images/hservices-bg.jpg');
+    background-attachment: fixed; /* creates parallax effect */
+    background-size: cover;
+    background-position: center;
+    color: var(--primary-color);
+  }
+
+  @media screen and (max-width: 768px) {
+    .servicesSection {
+      padding: 3rem 0.1rem;
+    }
+    
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+  }
+  
+  .separator {
+    width: 5rem;
+    height: 0.25rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 1rem auto 2rem auto;
+  }
+  
+  .serviceGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 85%;
+    margin: 0 auto;
+  }
+  
+  .serviceCard {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .serviceCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .departmentName {
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .serviceGrid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    
+  }

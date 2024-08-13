@@ -1,0 +1,63 @@
+.newsletterContainer {
+ background-color: var(--accent-color);
+ color: var(--primary-color);
+ padding: 2rem 10rem;
+}
+
+.newsletterLeft h1{
+    font-size: 2.15rem;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+}
+
+.newsletterLeft h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.newsletterRight {
+    padding: auto 0.4rem;
+    background-color: var(--primary-color);
+}
+
+.inputContainer {
+    display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background-color: var(--primary-color);
+     border-radius: 1rem;
+     padding: 0.5rem;
+     margin: 0 0.2rem;
+     min-width: 44rem;
+}
+
+.inputContainer .inputBox {
+    width: 100%;
+    line-height: 2.5rem;
+    margin-right: 1.8rem;
+    background:none;
+    border: 0;
+    font-size: 1rem;
+}
+
+.inputContainer .inputBox:focus {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.inputBtn {
+    cursor: pointer;
+}
+
+.inputContainer .inputBtn i {
+    font-size: 1.75rem;
+     color: var(--accent-color);
+     padding: 0 0.9rem;
+     background-color: var(--primary-color);
+}
+
+.inputContainer .inputBtn i:hover {
+    transform: scale(1.1);
+}

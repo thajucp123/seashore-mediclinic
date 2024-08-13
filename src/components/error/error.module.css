@@ -1,0 +1,64 @@
+.errorWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .errorContent {
+    max-width: 600px;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .errorCode {
+    font-size: 150px;
+    font-weight: bold;
+    color: var(--accent-color);
+  }
+  
+  .errorMessage {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .errorText {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666;
+  }
+  
+  .errorActions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .backButton {
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .backButton:hover {
+    background-color: #3e8e41;
+  }
+  
+  .contactButton {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contactButton:hover {
+    background-color: #656464;
+  }

@@ -1,0 +1,63 @@
+.aboutRightCard {
+  width: 100%;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .aboutRightCard {
+    margin: 0.9rem auto 0rem auto;
+  }
+  
+}
+.infoTitle {
+    font-size: 2rem !important;
+    margin: 0 0 2rem 0;
+  }
+  .separator {
+    width: 5rem;
+    height: 0.25rem;
+    background-color: rgba(193, 241, 252, 0.5);
+    margin-bottom: 1.5rem;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 1rem 0;
+  }
+  .infoDescription {
+    font-size: 1.05rem !important;
+  }
+  .infoBox {
+    padding: 0;
+    border-radius: 2rem;
+    background-color: var(--primary-color);
+    box-shadow: 0rem 0rem 0.6rem rgba(0, 0, 0, 0.05);
+  }
+
+  .infoBlockTop {
+    background-image: linear-gradient(to top right, rgba(15, 155, 186, 0.9), rgba(61, 222, 191, 0.8) 90%), url('../../assets/images/about-right-bg.jpg');
+  background-size: cover;
+  background-position: center;
+    border-radius: 2rem;
+    padding: 2rem;
+    color: var(--primary-color);
+  }
+
+  .logo {
+    width: 25%;
+    height: 25%;
+    object-fit: contain;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .infoBlockTop {
+      padding: 1rem;
+    }
+
+    .infoTitle {
+      font-size: 1.5rem !important;
+    }
+    
+  }
+  
+
+  

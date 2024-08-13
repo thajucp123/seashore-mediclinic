@@ -1,0 +1,35 @@
+.aboutSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 6em;
+    background-image: url('../../assets//images/habout-bg.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .aboutSection {
+        flex-direction: column;
+        padding: 4rem 2rem;
+    }
+    
+  }
+  
+  .readMoreButton {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0f9bba;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .readMoreButton:hover {
+    background-color: #5bb1c4;
+    color: var(--secondary-color);
+  }

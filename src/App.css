@@ -1,0 +1,67 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 85%;
+  margin: 1.5rem auto;
+}
+
+
+.flexSB {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@keyframes rotate-flip {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(180deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+.loader {
+  animation: rotate-flip 2.4s linear infinite;
+  transform-style: preserve-3d; /* Add this to enable 3D transformations */
+}
+
+.logoimg {
+  width: 18rem;
+  max-height: 6rem;
+  object-fit: contain;
+}
+
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  border-radius: 50%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: var(--accent-color);
+  transition: 0.5s ease-in-out;
+}
+
+.icon:hover {
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+button {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}

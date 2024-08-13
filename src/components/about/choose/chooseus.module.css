@@ -1,0 +1,87 @@
+.chooseSection {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-image: linear-gradient(to top right, rgba(15, 155, 186, 0.9), rgba(61, 222, 191, 0.9) 80%), url('../../assets/images/hservices-bg.jpg');
+    background-attachment: fixed; /* creates parallax effect */
+    background-size: cover;
+    background-position: center;
+    color: var(--primary-color);
+  }
+
+  @media screen and (max-width: 768px) {
+    .chooseSection {
+      padding: 3rem 0.1rem;
+    }
+    
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .separator {
+    width: 5rem;
+    height: 0.25rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 1rem auto 2rem auto;
+  }
+  
+  .chooseGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    max-width: 85%;
+    margin: 0 auto;
+  }
+  
+  .chooseCard {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .chooseCard:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .chooseCardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    max-width: 70%;
+  }
+  
+  .icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .departmentName {
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .chooseGrid {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1.5rem;
+    }
+    
+  }

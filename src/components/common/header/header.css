@@ -1,0 +1,157 @@
+.header-container {
+  background: linear-gradient(to top right, #0f9bba, #3ddebf 60%);
+  /*height: 100vh; /* or a fixed height */
+  /*position: relative; /* optional */
+}
+
+.head {
+    padding: 1.25rem auto;
+    color: var(--primary-color);
+    
+}
+
+.head-container {
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 1.6rem;
+}
+
+@media screen and (max-width: 768px) {
+  .head-container {
+    max-width: 90%;
+    padding: 0.8rem 0;
+  }
+  
+}
+
+
+.head .icon {
+    margin-left: 0.625rem;
+}
+
+@media screen and (max-width: 768px) {
+  .head .icon {
+    margin-top: 0.3125rem;
+  }
+  
+}
+
+header {
+    margin: 0 1.9rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 1s ease-in-out;
+    z-index: 2;
+}
+
+header.scrolled{
+  position: fixed;
+  min-width: 96%;
+  top: 0;
+  background-color: rgba(43, 34, 34, 0.7);
+  z-index: 9999;
+}
+
+@media only screen and (max-width: 768px) {
+  header.scrolled {
+    min-width: 100%;
+  }
+}
+
+header ul {
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 1.600rem 1.25rem;
+}
+
+header li {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-right: 2.5rem;
+}
+
+header li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.3s ease-in-out;
+}
+
+header li a:hover {
+    color: var(--accent-color);
+}
+
+header li a.active {
+    color: var(--accent-color);
+    text-decoration: dotted;
+    text-decoration-color: #2b3b38; /* optional, sets the color of the wavy line */
+   text-decoration-line: underline;
+}
+
+@media screen and (max-width: 768px) {
+  header li a.active {
+    color: var(--primary-color);
+  }
+
+}
+
+.start {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: 700;
+    padding: 1.790rem 4.375rem;
+    clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
+    text-decoration: underline;
+}
+
+.start:hover {
+  background-color: #247163;
+}
+
+.toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .start {
+        clip-path: none;
+      }
+      header {
+        margin: 0;
+        background-color: #1eb2a6;
+        position: relative;
+      }
+      header ul.flexSB {
+        display: none;
+      }
+      header ul li {
+        margin-bottom: 1.25rem;
+      }
+      .toggle {
+        display: block;
+        background: none;
+        color: #fff;
+        font-size: 2rem;
+        right: 5%;
+        position: relative;
+      }
+      .mobile-nav {
+        position: absolute;
+        top: 7vh;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #1eb2a6;
+        opacity: 0; /* Initial opacity */
+  animation: fadeIn 0.8s forwards;
+      }
+
+      /* Fade-in animation */
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+}
