@@ -55,6 +55,7 @@
     font-weight: bold;
     color: #333;
     margin: 0.625rem 0;
+    text-align: left;
     }
     
     .doctorSpecialty {
@@ -77,7 +78,7 @@
         }
         .doctorCard {
             flex-direction: column;
-            padding: 2rem 0.5rem;
+            padding: 2rem 0.5rem 1rem 0.5rem;
         }
         .doctorInfo {
             text-align: center;
@@ -89,5 +90,9 @@
         }
         .doctorName {
             font-size: 1.3rem;
+            text-align: center;
+        }
+        .doctorDescription {
+            padding: 0  1rem;;
         }
     }

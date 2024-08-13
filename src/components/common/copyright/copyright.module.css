@@ -1,0 +1,20 @@
+.copyright {
+    text-align: center;
+    background-color: #dcdcdc;
+    color: #2f2f32;
+    padding: 1rem;
+}
+
+.copyrightText, .creator {
+padding: 1rem;
+}
+
+.creator a {
+    color: var(--accent-color);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.creator a:hover {
+    font-weight: 700;
+}

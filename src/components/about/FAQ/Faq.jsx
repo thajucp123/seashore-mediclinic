@@ -33,7 +33,7 @@ const Faq = () => {
   };
 
   return (
-    <div className={styles.faqContainer}>
+    <div id="faq" className={styles.faqContainer}>
       <h2>Frequently Asked Questions</h2>
       {faqs.map((faq, index) => (
         <div key={index} className={styles.faqItem}>

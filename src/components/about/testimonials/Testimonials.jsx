@@ -3,7 +3,7 @@ import { testimonials } from './testimonial';
 
 const Testimonials = () => {
   return (
-    <section className={styles.testimonialSection}>
+    <section id="testimonial" className={styles.testimonialSection}>
       <h3>TESTIMONIAL</h3>
       <h2 className={styles.mainTitle}>Our Healthy & Happy Patients</h2>
       <div className={styles.separator}></div>

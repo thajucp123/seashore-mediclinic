@@ -10,7 +10,7 @@ const NewsLetter = () => {
 
     return(
         <section className= {styles.newsletter}>
-            <div className= {`${styles.newsletterContainer} flexSB`}>
+            <div className= {styles.newsletterContainer}>
                 <div className= {styles.newsletterLeft}>
                     <h1>Subscribe to our email newsletter</h1>
                     <h3>Stay tuned for regular updates right in your email</h3>

@@ -1,6 +1,15 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import styles from './ourdoctor.module.css';
 import image from "../../../assets/images/doctor.jpg"
 const OurDoctor = () => {
+
+  const location = useLocation();
+
+    useEffect(() => {
+      window.scrollTo(0, 0); //to prevent react router default behaviour of preserving previous scroll position
+    }, [location]);
+
   return (
     <section className={styles.doctors}>
       <h3>Trusted Medical Expertise</h3>

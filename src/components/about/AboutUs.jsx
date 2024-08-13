@@ -12,7 +12,15 @@ const AboutUs = () => {
   const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0); //to prevent react router default behaviour of preserving previous scroll position
+    if (location.hash === '#testimonial') {
+      const testimonialSection = document.getElementById('testimonial');
+      testimonialSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    else if (location.hash === '#faq') {
+      const testimonialSection = document.getElementById('faq');
+      testimonialSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    else window.scrollTo(0, 0); //to prevent react router default behaviour of preserving previous scroll position
   }, [location]);
 
     return(

@@ -11,13 +11,13 @@ const Head = () => {
                 </Link>
             </div>
             <div className='social'>
-            <a href="#">
+            <a>
             <i className='fab fa-facebook-f icon'></i>
             </a>
             <a href="https://www.instagram.com/seashore_mediclinic/" target="_blank" rel="noopener noreferrer">
             <i className='fab fa-instagram icon'></i>
             </a>
-            <a href="#">
+            <a>
             <i className='fab fa-linkedin icon'></i>
             </a>
           </div>

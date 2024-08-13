@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import styles from './healthpackages.module.css';
@@ -35,6 +37,13 @@ const packages = [
   ];
 
 const HealthPackages = () => {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); //to prevent react router default behaviour of preserving previous scroll position
+  }, [location]);
+
   return (
     <section className={styles.healthCheckupSection}>
         <h3>OUR PACKAGES</h3>
