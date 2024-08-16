@@ -21,7 +21,7 @@ const Services = () => {
                     return(
                         <div className={styles.serviceCard} key={index}>
 
-                    <img src={new URL(service.image, import.meta.url)} alt={service.servicename}/>
+                    <img src={service.image} alt={service.servicename}/>
                     <div className={styles.serviceTitle}>
                     <i className={`fa-solid ${service.icon}`}></i>
                     <h2>{service.servicename}</h2>
