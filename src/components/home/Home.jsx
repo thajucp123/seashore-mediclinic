@@ -6,7 +6,7 @@ import HServices from "../services/HServices";
 import HealthPackages from "./packages/healthPackages";
 import OurDoctor from "./doctor/OurDoctor";
 import Testimonials from "../about/testimonials/Testimonials";
-import Faq from "../about/FAQ/FAQ";
+import Faq from "../about/FAQ/Faq";
 
 const Home = () => {
 

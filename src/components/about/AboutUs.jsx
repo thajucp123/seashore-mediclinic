@@ -5,7 +5,7 @@ import AboutRightCard from "./AboutRightCard";
 import styles from "./about.module.css";
 import ChooseUs from "./choose/ChooseUs";
 import Testimonials from "./testimonials/Testimonials";
-import Faq from "./FAQ/FAQ";
+import Faq from "./FAQ/Faq";
 
 const AboutUs = () => {
 
