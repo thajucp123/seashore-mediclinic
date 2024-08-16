@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './App.css'
+import './App.css';
 
 import {
   BrowserRouter as Router,
@@ -15,6 +15,8 @@ import AboutUs from './components/about/AboutUs';
 import HealthPackages from './components/home/packages/healthPackages';
 import OurDoctor from './components/home/doctor/OurDoctor';
 import Footer from './components/common/footer/Footer';
+import Services from './components/services/Services';
+import ContactUs from './components/contact/ContactUs';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -37,8 +39,10 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/appointments" element={<Appointments/>}/>
         <Route path="/about" element={<AboutUs/>}/>
+        <Route path='/services' element={<Services/>}/>
         <Route path="/pricing" element={<HealthPackages/>}/>
         <Route path="/doctors" element={<OurDoctor/>}/>
+        <Route path="/contact" element={<ContactUs/>}/>
         <Route path="*" element={<ErrorPage/>}/>
       </Routes>
       <Footer/>

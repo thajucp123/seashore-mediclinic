@@ -8,7 +8,7 @@
 }
 
 .newsletterLeft h1{
-    font-size: 2.15rem;
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 0.7rem;
 }
@@ -20,7 +20,7 @@
 }
 
 .newsletterRight {
-    padding: auto 0.4rem;
+    padding: auto 0.9rem;
     background-color: var(--primary-color);
     border-radius: 5rem;
 }
@@ -33,7 +33,7 @@
      border-radius: 1rem;
      padding: 0.5rem;
      margin: 0 0.2rem;
-     min-width: 44rem;
+     min-width: 40rem;
      border-radius: 5rem;
 }
 
@@ -55,13 +55,15 @@
 
 .inputBtn {
     cursor: pointer;
+    background-color: var(--primary-color);
 }
 
 .inputContainer .inputBtn i {
     font-size: 1.75rem;
      color: var(--accent-color);
      padding: 0 0.9rem;
-     background-color: var(--primary-color);
+     background: none;
+     --fa-animation-duration: 1s;
 }
 
 .inputContainer .inputBtn i:hover {

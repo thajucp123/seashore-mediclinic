@@ -94,14 +94,18 @@ const Footer = () => {
                         Aramam Complex, Valluvakuni Thara,
                         Arabic Colege Road, Ayanikkad, Kerala 673521
                     </li>
+                    <a href="tel:+91 9567-622-500">
                     <li>
                     <i className="fa-solid fa-phone-volume" style={{fontSize:'1.4rem'}}></i>
                     +91 9567-622-500
                     </li>
+                    </a>
+                    <a href="mailto:info@seashoremediclinic.com">
                     <li>
                     <i className="fa-solid fa-envelope" style={{fontSize:'1.4rem'}}></i>
                         info@seashoremediclinic.com
                     </li>
+                    </a>
                 </ul>
             </div>
         </div>

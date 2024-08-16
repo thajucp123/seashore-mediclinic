@@ -34,6 +34,20 @@
   transform-style: preserve-3d; /* Add this to enable 3D transformations */
 }
 
+p.success {
+	color: rgb(1, 179, 1);
+  display: inline;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+p.danger {
+	color: rgb(207, 28, 28);
+  display: inline;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
 .logoimg {
   width: 18rem;
   max-height: 6rem;

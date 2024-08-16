@@ -7,8 +7,6 @@ const Preloader = () => {
         <br/>
         <br/>
       <img src={logo} alt="" className="logoimg loader"/>
-      
-      
     </div>
   );
 };
