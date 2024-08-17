@@ -32,6 +32,7 @@
 
 .contactUsContainer iframe {
     border-radius: 0.5rem 0 0 0.5rem;
+    background-color: #c0c0c0;
 }
 
 .contactForm {
@@ -142,5 +143,11 @@
     }
     .contactFormContainer {
         padding: 1.5rem 1rem 1rem 1em;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 769px) {
+    .contactUs {
+        padding: 2rem 1rem;
     }
 }

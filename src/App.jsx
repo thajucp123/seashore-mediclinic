@@ -1,57 +1,53 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense, lazy } from 'react';
 import './App.css';
-
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from './components/common/header/Header';
 import Preloader from './components/loader/Preloader';
 import ErrorPage from './components/error/ErrorPage';
-import Home from './components/home/Home';
-import Appointments from './components/appointment/Appointments';
-import AboutUs from './components/about/AboutUs';
-import HealthPackages from './components/home/packages/healthPackages';
-import OurDoctor from './components/home/doctor/OurDoctor';
 import Footer from './components/common/footer/Footer';
-import Services from './components/services/Services';
-import ContactUs from './components/contact/ContactUs';
+
+const Home = lazy(() => import('./components/home/Home'));
+const Appointments = lazy(() => import('./components/appointment/Appointments'));
+const AboutUs = lazy(() => import('./components/about/AboutUs'));
+const Services = lazy(() => import('./components/services/Services'));
+const HealthPackages = lazy(() => import('./components/home/packages/healthPackages'));
+const OurDoctor = lazy(() => import('./components/home/doctor/OurDoctor'));
+const ContactUs = lazy(() => import('./components/contact/ContactUs'));
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-  
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 4600); // timeout for loading animation
-
     return () => clearTimeout(timer); // cleanup timer
   }, []);
 
   return (
     <>
-    {isLoading ?
-      (<Preloader/>) : (
-    <Router>
-      <Header/>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/appointments" element={<Appointments/>}/>
-        <Route path="/about" element={<AboutUs/>}/>
-        <Route path='/services' element={<Services/>}/>
-        <Route path="/pricing" element={<HealthPackages/>}/>
-        <Route path="/doctors" element={<OurDoctor/>}/>
-        <Route path="/contact" element={<ContactUs/>}/>
-        <Route path="*" element={<ErrorPage/>}/>
-      </Routes>
-      <Footer/>
-    </Router>
-      )
-    }
+      {isLoading ? (
+        <Preloader />
+      ) : (
+        <Router>
+          <Header />
+          <Suspense fallback={<Preloader />}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/appointments" element={<Appointments />} />
+              <Route path="/about" element={<AboutUs />} />
+              <Route path='/services' element={<Services />} />
+              <Route path="/pricing" element={<HealthPackages />} />
+              <Route path="/doctors" element={<OurDoctor />} />
+              <Route path="/contact" element={<ContactUs />} />
+              <Route path="*" element={<ErrorPage />} />
+            </Routes>
+          </Suspense>
+          <Footer />
+        </Router>
+      )}
     </>
-  )
-
+  );
 }
 
-export default App
+export default App;

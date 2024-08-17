@@ -2,33 +2,36 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-color: #f0f0f0;
+    padding: 5rem 1rem;
   }
   
   .errorContent {
-    max-width: 600px;
-    padding: 50px;
+    max-width: 37.5rem;
+    padding: 0 1.5rem 2.5rem 1.5rem;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
   .errorCode {
-    font-size: 150px;
+    font-size: 4.8rem;
     font-weight: bold;
     color: var(--accent-color);
+    padding-top: 0;
+    margin-top: 0;
+    text-align: center;
   }
   
   .errorMessage {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
     color: #333;
   }
   
   .errorText {
-    font-size: 18px;
-    margin-bottom: 30px;
+    font-size: 1.125rem;
+    margin-bottom: 1.875rem;
     color: #666;
   }
   
@@ -41,8 +44,8 @@
     background-color: var(--accent-color);
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.313rem;
     cursor: pointer;
   }
   
@@ -53,9 +56,9 @@
   .contactButton {
     background-color: #333;
     color: #fff;
-    border: 1px solid #333;
-    padding: 10px 20px;
-    border-radius: 5px;
+    border: 0.0625rem solid #333;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.313rem;
     cursor: pointer;
   }
   

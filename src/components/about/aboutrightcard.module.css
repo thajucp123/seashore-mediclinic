@@ -48,7 +48,7 @@
     object-fit: contain;
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1400px) {
     .infoBlockTop {
       padding: 1rem;
     }

@@ -1,7 +1,5 @@
 .header-container {
-  background: linear-gradient(to top right, #0f9bba, #3ddebf 60%);
-  /*height: 100vh; /* or a fixed height */
-  /*position: relative; /* optional */
+  background: linear-gradient(to top right, #0f9bba, #3ddebf 20%);
 }
 
 .head {

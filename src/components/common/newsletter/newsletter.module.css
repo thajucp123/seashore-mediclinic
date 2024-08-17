@@ -70,7 +70,7 @@
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .newsletterContainer {
         flex-direction: column;
         padding: 2rem 1rem;
@@ -86,6 +86,24 @@
 
     .inputContainer {
         min-width: 20rem;
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 769px) {
+    .newsletterContainer {
+        padding: 2rem 5rem;
+    }
+    .newsletterLeft h1{
+        font-size: 1.7rem;
+    }
+    .newsletterLeft h3 {
+        font-size: 1rem;
+    }
+
+
+    .inputContainer {
+        min-width: 40rem;
         margin: 0 0;
     }
 }

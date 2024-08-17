@@ -23,7 +23,7 @@ const Services = () => {
 
                     <img src={service.image} alt={service.servicename}/>
                     <div className={styles.serviceTitle}>
-                    <i className={`fa-solid ${service.icon}`}></i>
+                    <i className={`fa-solid ${service.icon}`} style={{color: '#404040'}}></i>
                     <h2>{service.servicename}</h2>
                     </div>
                     <p>{service.description}</p>
