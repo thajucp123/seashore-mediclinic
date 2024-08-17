@@ -5,6 +5,7 @@ import Header from './components/common/header/Header';
 import Preloader from './components/loader/Preloader';
 import ErrorPage from './components/error/ErrorPage';
 import Footer from './components/common/footer/Footer';
+import WhatsappButton from './components/whatsapp/WhatsappButton';
 
 const Home = lazy(() => import('./components/home/Home'));
 const Appointments = lazy(() => import('./components/appointment/Appointments'));
@@ -44,6 +45,7 @@ function App() {
             </Routes>
           </Suspense>
           <Footer />
+          <WhatsappButton/>
         </Router>
       )}
     </>
