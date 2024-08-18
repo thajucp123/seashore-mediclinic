@@ -21,7 +21,7 @@ const WhatsappButton = () =>{
     }, []);
 
     const handleMouseOver = () => {
-      const isMobile = window.matchMedia("(max-width: 768px)").matches;
+      const isMobile = window.matchMedia("(max-width: 800px)").matches;
         setShowSpan(isMobile? false: true);
     };
   

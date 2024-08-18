@@ -49,7 +49,7 @@ header.scrolled{
   z-index: 9999;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   header.scrolled {
     min-width: 100%;
   }
@@ -110,7 +110,7 @@ header li a.active {
     display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .start {
         clip-path: none;
       }
@@ -152,4 +152,11 @@ header li a.active {
     }
   }
 
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .start {
+      clip-path: none;
+      padding: 1.790rem 16.375rem 1.790rem 4.375rem ;
+    }
 }
