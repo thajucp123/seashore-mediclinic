@@ -8,7 +8,7 @@ const CopyRight = () => {
             </span>
             <span>|</span>
             <span className={styles.creator}>
-                Developed by &nbsp;<a href="https://www.thajucp.in/" target="_blank" rel="noopener noreferrer">Thaju C P</a> .
+                Developed by &nbsp;<a href="https://www.thaju-cp.vercel.app/" target="_blank" rel="noopener noreferrer">Thaju C P</a> .
             </span>
         </section>
     )
