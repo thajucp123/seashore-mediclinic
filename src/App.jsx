@@ -13,6 +13,7 @@ const AboutUs = lazy(() => import('./components/about/AboutUs'));
 const Services = lazy(() => import('./components/services/Services'));
 const HealthPackages = lazy(() => import('./components/home/packages/healthPackages'));
 const OurDoctor = lazy(() => import('./components/home/doctor/OurDoctor'));
+const Gallery = lazy(() => import('./components/gallery/Gallery'));
 const ContactUs = lazy(() => import('./components/contact/ContactUs'));
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
               <Route path='/services' element={<Services />} />
               <Route path="/pricing" element={<HealthPackages />} />
               <Route path="/doctors" element={<OurDoctor />} />
+              <Route path='/gallery' element={<Gallery/>} />
               <Route path="/contact" element={<ContactUs />} />
               <Route path="*" element={<ErrorPage />} />
             </Routes>

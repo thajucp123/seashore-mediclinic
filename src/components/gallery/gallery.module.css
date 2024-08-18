@@ -1,0 +1,109 @@
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    padding: 4rem 2rem;
+    text-align: center;
+    width: 100vw;
+}
+
+.galleryContainer {
+    max-width: 85%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+    }
+
+.mainTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--tertiary-color);
+}
+
+.separator {
+    width: 5rem;
+    height: 0.25rem;
+    background-color: rgba(28, 162, 192,0.2);
+    margin: 1rem auto;
+  }
+
+  .galleryItem {
+    position: relative;
+    width: 100%;
+    margin-bottom: 0.625rem;
+    border-radius: 0.625rem;
+    min-height: 17rem;
+    min-width: 13rem;
+    overflow: hidden;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.25);
+    outline: 1px solid rgba(12, 112, 149, 0.55);
+  }
+  
+  .galleryItem .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    background-color: #c0c0c0;
+  }
+  
+  .galleryItem:hover .image {
+    transform: scale(1.1);
+  }
+
+  .imgplaceholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f0efef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imgloader {
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 0.125rem solid #ccc;
+    border-top-color: #666;
+    border-radius: 50%;
+    animation: loadspin 1s linear infinite;
+  }
+  
+  @keyframes loadspin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 0.625rem;
+    text-align: center;
+  }
+  
+  .overlayText {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .galleryContainer {
+      grid-template-columns: repeat(1, 1fr);
+      max-width: 90%;
+    }
+    
+  }

@@ -38,6 +38,9 @@ const Header = () => {
             case '/doctors':
                 setActive('doctors');
                 break;
+            case '/gallery':
+                setActive('gallery');
+                break;
             case '/contact':
                 setActive('contact');
                 break;
