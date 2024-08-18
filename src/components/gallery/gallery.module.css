@@ -101,9 +101,16 @@
   }
 
   @media screen and (max-width: 768px) {
+    .gallery {
+        padding: 4rem 1rem;
+    }
     .galleryContainer {
       grid-template-columns: repeat(1, 1fr);
-      max-width: 90%;
+      gap: 1rem;
+      max-width: 95%;
+    }
+    .galleryItem {
+        margin-bottom: 0.30rem;
     }
     
   }
