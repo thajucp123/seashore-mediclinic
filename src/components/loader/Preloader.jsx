@@ -1,6 +1,13 @@
+import { useEffect } from "react";
 import "./loader-styles.css";
 import logo from "../../assets/logos/seashore logo black.png";
 const Preloader = () => {
+
+    useEffect(() => {
+      window.scrollTo(0, 0); //to prevent react router default behaviour of preserving previous scroll position
+    }, []);
+
+
   return (
     <div className="preloader">
         <h3>Loading..</h3>

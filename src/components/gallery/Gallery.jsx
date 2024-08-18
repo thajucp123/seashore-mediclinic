@@ -1,7 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import styles from "./gallery.module.css";
 
 const Gallery = () => {
+
+    const location = useLocation();
+
+    useEffect(() => {
+      window.scrollTo(0, 0); //to prevent react router default behaviour of preserving previous scroll position
+    }, [location]);
+
 
     const [loadedImages, setLoadedImages] = useState ({}); // to keep track of images that have been loaded
     const [loadComplete, setLoadComplete] = useState(false); // to keep track of whether both original and placeholder images have been loaded
