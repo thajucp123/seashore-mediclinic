@@ -11,7 +11,7 @@ export default defineConfig({
       onRoutesGenerated: (routes) => {
         generateSitemap({
           routes,
-          hostname: 'http://thajucp.byethost10.com',  // Replace with actual domain
+          hostname: 'https://seashoremediclinic.com/',  // Replace with actual domain
           outDir: 'dist',
           readable: true,
         });
