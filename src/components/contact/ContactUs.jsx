@@ -28,7 +28,7 @@ const ContactUs = () => {
     const contactDetails = [
         {
             title: "EMAIL",
-            info: "info@seshoremediclinic.com",
+            info: "seashoremediclinic@gmail.com",
         },
         {
             title: "PHONE",

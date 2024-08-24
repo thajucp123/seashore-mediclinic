@@ -100,10 +100,10 @@ const Footer = () => {
                     +91 9567-622-500
                     </li>
                     </a>
-                    <a href="mailto:info@seashoremediclinic.com">
+                    <a href="mailto:seashoremediclinic@gmail.com">
                     <li>
                     <i className="fa-solid fa-envelope" style={{fontSize:'1.4rem'}}></i>
-                        info@seashoremediclinic.com
+                    seashoremediclinic@gmail.com
                     </li>
                     </a>
                 </ul>
